@@ -30,7 +30,7 @@
         <init comment="false" x="15" y="15">
             <group eventID="4" id="-1">
                 <set-val-0-1 comment="false" x="26" y="40">
-                    <int id="0" val="20"/>
+                    <int id="0" val="5"/>
                 </set-val-0-1>
             </group>
         </init>

@@ -184,4 +184,53 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_14_14_IntroTitle" classname="scripts.Design_14_14_IntroTitle" desc="Shows an intro title, which slides away after the specified time." description="Shows an intro title, which slides away after the specified time." design="true" drawOrder="0" id="14" name="Intro Title" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <boolean default="false" defaultValue="false" desc="INTERNAL ATTRIBUTE. Whether or not the slide-off has started." dropdown="" fullname="Started" hidden="true" id="5" name="_Started" order="0"/>
+        <font default="" defaultValue="" desc="The font to use when drawing the intro title. Specify from the list of fonts you have created in Stencyl." dropdown="" fullname="Font To Use" hidden="false" id="6" name="_FontToUse" order="7"/>
+        <number default="1.0" defaultValue="1.0" desc="The amount of time, in seconds, before that the intro title should wait before beginning its exit of the screen." dropdown="" fullname="Time Before Retreat" hidden="false" id="7" name="_TimeBeforeRetreat" order="5"/>
+        <number default="0.0" defaultValue="0.0" desc="The y-position, in screen coordinates, of the centre of the Intro Title." dropdown="" fullname="Y Centre Position" hidden="false" id="8" name="_YCentrePosition" order="4"/>
+        <text default="" defaultValue="" desc="Show this text in the Intro Title. Leave blank to use the scene's name." dropdown="" fullname="Alternative Text" hidden="false" id="10" name="_AlternativeText" order="6"/>
+        <number default="-5.0" defaultValue="-5.0" desc="The initial speed to slide off the screen at." dropdown="" fullname="Slide Speed" hidden="false" id="11" name="_SlideSpeed" order="1"/>
+        <boolean default="false" defaultValue="false" desc="Should a rounded rectangle be drawn behind the text?" dropdown="" fullname="Draw Rounded Rectangle?" hidden="false" id="12" name="_DrawRectangle" order="9"/>
+        <number default="0.0" defaultValue="0.0" desc="The x-position, in screen coordinates, of the centre of the Intro Title." dropdown="" fullname="X Centre Position" hidden="false" id="13" name="_XCentrePosition" order="3"/>
+        <color default="204,255,255,255" defaultValue="204,255,255,255" desc="The fill colour for the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Fill Colour" hidden="false" id="14" name="_FillColour" order="10"/>
+        <color default="153,204,255,255" defaultValue="153,204,255,255" desc="The stroke colour for the rounded rectangle behind the text, if one is drawn. (Stroke is the outline)." dropdown="" fullname="Stroke Colour" hidden="false" id="15" name="_StrokeColour" order="11"/>
+        <number default="1.0" defaultValue="1.0" desc="The thickness, in pixels, of the stroke around the outside of the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Stroke Thickness" hidden="false" id="16" name="_StrokeThickness" order="12"/>
+        <number default="4.0" defaultValue="4.0" desc="Padding around the text, in pixels, for the rounded rectangle behind the text, if one is drawn." dropdown="" fullname="Padding" hidden="false" id="17" name="_Padding" order="13"/>
+        <number default="2.0" defaultValue="2.0" desc="The amount the rounded rectangle is rounded, if one is drawn. (Use 0 for right-angled corners)." dropdown="" fullname="Rounding" hidden="false" id="18" name="_Rounding" order="14"/>
+        <text default="" defaultValue="" desc="The direction the Intro Title slides away to." dropdown="Up=Up&#10;Down=Down&#10;Left=Left&#10;Right=Right" fullname="Slide Direction" hidden="false" id="19" name="_SlideDirection" order="8"/>
+        <number default="0.5" defaultValue="0.5" desc="The slide speed is incremented by this value every update." dropdown="" fullname="Slide Speed Change" hidden="false" id="20" name="_SlideSpeedChange" order="2"/>
+        <blocks>
+            <receiver blockID="113" id="1"/>
+            <receiver blockID="15" id="2"/>
+            <receiver blockID="16" id="3"/>
+            <receiver blockID="18" id="4"/>
+            <receiver blockID="111" id="5"/>
+            <receiver blockID="112" id="6"/>
+        </blocks>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="3" name="draw" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_9" classname="scripts.ActorEvents_9" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="15" name="ActorEvents_9" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_11" classname="scripts.ActorEvents_11" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="16" name="ActorEvents_11" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_17_17_SwitchSceneonClickorTouch" classname="scripts.Design_17_17_SwitchSceneonClickorTouch" desc="Switch scene when the user clicks or touches the screen." description="Switch scene when the user clicks or touches the screen." design="true" drawOrder="0" id="17" name="Switch Scene on Click or Touch" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
+        <scene default="" defaultValue="" desc="The scene to switch to." dropdown="" fullname="Next Scene" hidden="false" id="2" name="_NextScene" order="0"/>
+        <number default="0.5" defaultValue="0.5" desc="The time to transition out, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise the time to transition out and in." dropdown="" fullname="Out Time" hidden="false" id="7" name="_OutTime" order="4"/>
+        <number default="0.5" defaultValue="0.5" desc="The time to transition in, in seconds, if one of the first six &lt;em&gt;Transition Styles&lt;/em&gt; is used. Otherwise it is ignored." dropdown="" fullname="In Time" hidden="false" id="8" name="_InTime" order="5"/>
+        <text default="" defaultValue="" desc="The style to use for the switch scene transition." dropdown="Fade=Fade&#10;Blinds=Blinds&#10;Bubbles=Bubbles&#10;Spotlight=Spotlight&#10;Blur=Blur&#10;Box=Box&#10;Crossfade=Crossfade&#10;Slide Up=Slide Up&#10;Slide Down=Slide Down&#10;Slide Left=Slide Left&#10;Slide Right=Slide Right" fullname="Transition Style" hidden="false" id="9" name="_TransitionStyle" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Click" enabled="true" id="2" name="event-mouse-press-release" order="2" repeats="true"/>
+            <event displayName="SwitchScene" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
+        </events>
+    </snippet>
 </pack>
