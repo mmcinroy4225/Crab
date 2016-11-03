@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <set-val-8-3 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-8-3>
+                        <dolater comment="false" x="37" y="95">
+                            <group eventID="1" id="-1">
+                                <set-val-8-7 comment="false" x="48" y="127">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-8-7>
+                            </group>
+                            <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </dolater>
+                        <periodic comment="false" x="37" y="164">
+                            <group eventID="1" id="-1">
+                                <if comment="false" x="48" y="196">
+                                    <group eventID="1" id="-1">
+                                        <set-val-8-7 comment="false" x="59" y="221">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-8-7>
+                                        <set-val-8-3 comment="false" x="59" y="246">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-8-3>
+                                        <cancel comment="false" x="59" y="271"/>
+                                    </group>
+                                    <get-val-8-7 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <if comment="false" x="48" y="303">
+                                    <group eventID="1" id="-1">
+                                        <fadeTo comment="false" x="59" y="328">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-8-4 comment="false" id="1" x="0" y="0"/>
+                                            <div comment="false" id="2" x="0" y="0">
+                                                <get-val-8-6 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </div>
+                                            <int id="3" val="0"/>
+                                        </fadeTo>
+                                    </group>
+                                    <get-val-8-5 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="377">
+                                    <group eventID="1" id="-1">
+                                        <fadeTo comment="false" x="59" y="397">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-8-4 comment="false" id="1" x="0" y="0"/>
+                                            <int id="2" val="0"/>
+                                            <int id="3" val="0"/>
+                                        </fadeTo>
+                                    </group>
+                                </else>
+                                <dolater comment="false" x="48" y="441">
+                                    <group eventID="1" id="-1">
+                                        <if comment="false" x="59" y="478">
+                                            <group eventID="1" id="-1">
+                                                <fadeTo comment="false" x="70" y="503">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="100"/>
+                                                    <div comment="false" id="2" x="0" y="0">
+                                                        <get-val-8-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="2"/>
+                                                    </div>
+                                                    <int id="3" val="0"/>
+                                                </fadeTo>
+                                            </group>
+                                            <get-val-8-5 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <else comment="false" x="59" y="552">
+                                            <group eventID="1" id="-1">
+                                                <fadeTo comment="false" x="70" y="572">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="100"/>
+                                                    <int id="2" val="0"/>
+                                                    <int id="3" val="0"/>
+                                                </fadeTo>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <div comment="false" id="0" x="0" y="0">
+                                        <get-val-8-6 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </div>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <get-val-8-6 comment="false" id="0" x="0" y="0"/>
+                            <ACTOR eid="this" id="2"/>
+                        </periodic>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-8-3 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="Flicker"/>
+        </event-custom>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <say-this comment="false" x="26" y="45">
+                    <int id="0" val="Flicker"/>
+                </say-this>
+            </group>
+        </collide>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-8-6 comment="false" x="26" y="40">
+                    <div comment="false" id="0" x="0" y="0">
+                        <get-val-8-1 comment="false" id="0" x="0" y="0"/>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <get-val-8-2 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </plus>
+                    </div>
+                </set-val-8-6>
+            </group>
+        </init>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>
