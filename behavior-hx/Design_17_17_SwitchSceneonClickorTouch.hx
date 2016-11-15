@@ -69,14 +69,9 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_12_12_SwitchSceneonEnterRegion extends SceneScript
+class Design_17_17_SwitchSceneonClickorTouch extends SceneScript
 {
-	public var _Region:Region;
 	public var _NextScene:Scene;
-	public var _Actor:Actor;
-	public var _InRegion:Bool;
-	public var _OnlySwitchOnKeyPress:Bool;
-	public var _SwitchControl:String;
 	public var _OutTime:Float;
 	public var _InTime:Float;
 	public var _TransitionStyle:String;
@@ -137,14 +132,7 @@ class Design_12_12_SwitchSceneonEnterRegion extends SceneScript
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
-		nameMap.set("Region", "_Region");
 		nameMap.set("Next Scene", "_NextScene");
-		nameMap.set("Actor", "_Actor");
-		nameMap.set("In Region", "_InRegion");
-		_InRegion = false;
-		nameMap.set("Only Switch On Key Press", "_OnlySwitchOnKeyPress");
-		_OnlySwitchOnKeyPress = false;
-		nameMap.set("Switch Control", "_SwitchControl");
 		nameMap.set("Out Time", "_OutTime");
 		_OutTime = 0.5;
 		nameMap.set("In Time", "_InTime");
@@ -157,40 +145,12 @@ class Design_12_12_SwitchSceneonEnterRegion extends SceneScript
 	override public function init()
 	{
 		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* ============================ Click ============================= */
+		addMousePressedListener(function(list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				_InRegion = false;
-				propertyChanged("_InRegion", _InRegion);
-				if((((hasValue(_Actor)) && _Actor.isAlive()) && (((hasValue(_Region)) && (hasValue(_NextScene))) && !(isTransitioning()))))
-				{
-					if(isInRegion(_Actor, _Region))
-					{
-						if(_OnlySwitchOnKeyPress)
-						{
-							_InRegion = true;
-							propertyChanged("_InRegion", _InRegion);
-						}
-						else
-						{
-							_customEvent_SwitchScene();
-						}
-					}
-				}
-			}
-		});
-		
-		/* =========================== Keyboard =========================== */
-		addKeyStateListener(_SwitchControl, function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && pressed)
-			{
-				if(_InRegion)
-				{
-					_customEvent_SwitchScene();
-				}
+				_customEvent_SwitchScene();
 			}
 		});
 		

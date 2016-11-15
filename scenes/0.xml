@@ -9,6 +9,7 @@
         <region b="64" g="64" h="392" id="1" name="Region 1" pts="4,20.0,0.0,20.0,392.0,0.0,392.0,0.0,0.0" r="64" type="box" w="20" x="2" y="50"/>
         <region b="64" g="64" h="18" id="2" name="Region 2" pts="4,363.0,0.0,363.0,18.0,0.0,18.0,0.0,0.0" r="64" type="box" w="363" x="70" y="463"/>
         <region b="64" g="64" h="31" id="3" name="Region 3" pts="4,369.0,0.0,369.0,31.0,0.0,31.0,0.0,0.0" r="64" type="box" w="369" x="73" y="1"/>
+        <region b="64" g="64" h="7" id="4" name="Region 4" pts="4,6.0,0.0,6.0,7.0,0.0,7.0,0.0,0.0" r="64" type="box" w="6" x="721" y="-44"/>
     </regions>
     <terrainRegions/>
     <actors>

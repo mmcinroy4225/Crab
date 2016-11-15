@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
-    <group eventID="1" id="0">
-        <event-custom comment="false" x="15" y="15">
-            <group eventID="1" id="-1">
-                <incdec comment="false" x="26" y="40">
-                    <int id="0" val="1"/>
-                    <int id="1" val="1"/>
-                    <int id="2" val="1"/>
-                </incdec>
-                <apply-filter comment="false" x="26" y="67">
-                    <ACTOR eid="this" id="0"/>
-                    <filter-negative comment="false" id="1" x="0" y="0"/>
-                </apply-filter>
-                <dolater comment="false" x="26" y="99">
-                    <group eventID="1" id="-1">
-                        <clear-filter comment="false" x="37" y="126">
-                            <ACTOR eid="this" id="0"/>
-                        </clear-filter>
-                    </group>
-                    <int id="0" val=".1"/>
-                    <ACTOR eid="this" id="2"/>
-                </dolater>
-            </group>
-            <int id="0" val="PlayerHit"/>
-        </event-custom>
-    </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <step comment="false" x="15" y="15">
             <group eventID="2" id="-1">
@@ -57,9 +31,11 @@
     <group eventID="4" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
             <group eventID="4" id="-1">
-                <die comment="false" x="26" y="47">
-                    <ACTOR eid="this" id="0"/>
-                </die>
+                <incdec comment="false" x="26" y="47">
+                    <int id="0" val="1"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
             </group>
             <actortype eid="5" id="0"/>
             <actortype eid="0" id="1"/>
@@ -69,13 +45,24 @@
     <group eventID="5" id="0">
         <event-collide-typetotype comment="false" x="15" y="15">
             <group eventID="5" id="-1">
-                <die comment="false" x="26" y="47">
-                    <ACTOR eid="this" id="0"/>
-                </die>
+                <incdec comment="false" x="26" y="47">
+                    <int id="0" val="1"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </incdec>
             </group>
             <actortype eid="0" id="0"/>
             <actortype eid="5" id="1"/>
         </event-collide-typetotype>
     </group>
     <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-type-region comment="false" x="54" y="113">
+            <group eventID="6" id="-1"/>
+            <int id="0" val="0"/>
+            <REGION eid="this" id="1"/>
+            <actortype eid="5" id="2"/>
+        </event-type-region>
+    </group>
+    <group eventID="6" id="-1"/>
 </groups>

@@ -75,7 +75,7 @@
                     <get-val-12-7 comment="false" id="0" x="0" y="0"/>
                 </if>
             </group>
-            <CONTROL eid="var" id="0" vid="9"/>
+            <control eid="var" id="0" vid="9"/>
             <int id="1" val="0"/>
         </event-key-press-release>
     </group>
@@ -88,7 +88,7 @@
                         <if comment="false" x="37" y="78">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="108">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="0"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="0"/>
@@ -103,7 +103,7 @@
                         <else-if comment="false" x="37" y="152">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="182">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="1"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="1"/>
@@ -118,7 +118,7 @@
                         <else-if comment="false" x="37" y="226">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="256">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="2"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="2"/>
@@ -133,7 +133,7 @@
                         <else-if comment="false" x="37" y="300">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="330">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="3"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="3"/>
@@ -148,7 +148,7 @@
                         <else-if comment="false" x="37" y="374">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="404">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="4"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="4"/>
@@ -163,7 +163,7 @@
                         <else-if comment="false" x="37" y="448">
                             <group eventID="12" id="-1">
                                 <scene-change-new comment="false" x="48" y="478">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="5"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                     <int id="3" val="5"/>
@@ -178,7 +178,7 @@
                         <else-if comment="false" x="37" y="522">
                             <group eventID="12" id="-1">
                                 <scene-change-through comment="false" x="48" y="552">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="0"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                 </scene-change-through>
@@ -191,7 +191,7 @@
                         <else-if comment="false" x="37" y="596">
                             <group eventID="12" id="-1">
                                 <scene-change-through comment="false" x="48" y="626">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="1"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                 </scene-change-through>
@@ -204,7 +204,7 @@
                         <else-if comment="false" x="37" y="670">
                             <group eventID="12" id="-1">
                                 <scene-change-through comment="false" x="48" y="700">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="2"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                 </scene-change-through>
@@ -217,7 +217,7 @@
                         <else-if comment="false" x="37" y="744">
                             <group eventID="12" id="-1">
                                 <scene-change-through comment="false" x="48" y="774">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="3"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                 </scene-change-through>
@@ -230,7 +230,7 @@
                         <else-if comment="false" x="37" y="818">
                             <group eventID="12" id="-1">
                                 <scene-change-through comment="false" x="48" y="848">
-                                    <SCENE eid="var" id="0" vid="2"/>
+                                    <scene eid="var" id="0" vid="2"/>
                                     <int id="1" val="4"/>
                                     <get-val-12-10 comment="false" id="2" x="0" y="0"/>
                                 </scene-change-through>
